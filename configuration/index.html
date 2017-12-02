@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Main :: My New Hugo Site</title>
+    <title>Configuration :: My New Hugo Site</title>
     
     
     <link href="/css/nucleus.css?1512258215" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/configuration/">
     <nav id="sidebar" class="">
 
 
@@ -76,8 +76,8 @@
   
     
     <li data-nav-id="/configuration/" title="Configuration" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/configuration/">
@@ -113,36 +113,138 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Main</a> > Configuration
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#links">Links</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#general-config">General Config</a>
+<ul>
+<li>
+<ul>
+<li><a href="#changing-default-colors">Changing default colors</a></li>
+<li><a href="#changing-logo">Changing Logo</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#adding-new-content">Adding new content</a></li>
+<li><a href="#jupyter">Jupyter</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
 
         
         <div id="body-inner">
           
+            <h1>Configuration</h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
-
- 
 
 
-<h2 id="welcome">Welcome!</h2>
 
-<p><br></p>
+<h3 id="links">Links</h3>
 
-<h4 id="todo">Todo</h4>
+<p>These are the links I used when creating this site. Below I&rsquo;ve included what I did, hopefully without forgetting anything. <br>
+<a href="https://gohugo.io/documentation/">Hugo documentation</a> <br>
+<a href="https://gohugo.io/getting-started/quick-start/">Hugo quick start guide</a> <br>
+<a href="https://themes.gohugo.io/hugo-theme-learn/">Hugo Learn theme</a> <br>
+<a href="https://learn.netlify.com/en/">Learn documentation</a></p>
 
-<ul>
-<li>Write something other than a todo on the front page</li>
-<li>Basic site configuration</li>
-<li>Jupyter support</li>
-<li>Document setup in configuration section</li>
-<li>Figure out how to change code block background to something other than black</li>
-<li>Add content&hellip;</li>
-</ul>
+<p>Hugo init
+add theme
+theme setup
+    color
+    logo
+serve script for testing
+publish&hellip;</p>
+
+<h3 id="setup">Setup</h3>
+
+<p>I use two repos, one for the source for site generation, and one with the webpage. <br>
+<a href="https://github.com/ClausHolmgaard/Site">Source</a> <br>
+<a href="https://github.com/ClausHolmgaard/ClausHolmgaard.github.io">Webpage</a> <br>
+To set up a github webpage, follow <a href="https://pages.github.com/">this</a>.</p>
+
+<p>Create and clone both repos. <br>
+Change directory to source repo directory. <br>
+Initialize Hugo site using <code>hugo new site --force</code> <br></p>
+
+<p>Now add the Learn theme as a submodule using <code>git submodule add https://pages.github.com/ themes/Learn</code>.<br>
+And set <code>theme = &quot;Learn&quot;</code> or whatever whatever you checked the theme out as.</p>
+
+<p>I use the following while developing the site <br>
+<code>hugo server -s ~/git/Site/ -d ~/git/clausholmgaard.github.io/</code> <br>
+To start a local server and generate output in the webpage repo.</p>
+
+<h3 id="general-config">General Config</h3>
+
+<h5 id="changing-default-colors">Changing default colors</h5>
+
+<p>Add the following to <code>config.toml</code>. <br></p>
+
+<pre><code>[params]
+themeVariant = &quot;blue&quot;
+</code></pre>
+
+<h5 id="changing-logo">Changing Logo</h5>
+
+<p>Edit <code>themes/Learn/layouts/partials/logo.html</code> and place an html [img] reference.</p>
+
+<pre><code>&lt;img src=&quot;/logo.png&quot; height=&quot;100&quot; width=&quot;200&quot;&gt;
+</code></pre>
+
+<h3 id="adding-new-content">Adding new content</h3>
+
+<h3 id="jupyter">Jupyter</h3>
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -174,8 +276,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -195,8 +295,8 @@
 
 
         
+            <a class="nav nav-prev" href="/" title="Main"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/configuration/" title="Configuration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
