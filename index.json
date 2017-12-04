@@ -1,10 +1,24 @@
 [
 {
+	"uri": "http://localhost:1313/",
+	"title": "Main",
+	"tags": [],
+	"description": "",
+	"content": " Welcome! \nTodo  Write something other than a todo on the front page Basic site configuration Jupyter support Document setup in configuration section Figure out how to change code block background to something other than black Add content\u0026hellip;  "
+},
+{
+	"uri": "http://localhost:1313/configuration/test-title/",
+	"title": "Test title",
+	"tags": [],
+	"description": "",
+	"content": "\nTest of Jupyter notebook with Hugo"
+},
+{
 	"uri": "http://localhost:1313/configuration/",
 	"title": "Configuration",
 	"tags": [],
 	"description": "",
-	"content": " Links These are the links I used when creating this site. Below I\u0026rsquo;ve included what I did, hopefully without forgetting anything. Hugo documentation Hugo quick start guide Hugo Learn theme Learn documentation\nHugo init add theme theme setup color logo serve script for testing publish\u0026hellip;\nSetup I use two repos, one for the source for site generation, and one with the webpage. Source Webpage To set up a github webpage, follow this.\nCreate and clone both repos. Change directory to source repo directory. Initialize Hugo site using hugo new site --force Now add the Learn theme as a submodule using git submodule add https://pages.github.com/ themes/Learn.\nAnd set theme = \u0026quot;Learn\u0026quot; or whatever whatever you checked the theme out as.\nI use the following while developing the site hugo server -s ~/git/Site/ -d ~/git/clausholmgaard.github.io/ To start a local server and generate output in the webpage repo.\nGeneral Config Changing default colors Add the following to config.toml. [params] themeVariant = \u0026quot;blue\u0026quot;  Changing Logo Edit themes/Learn/layouts/partials/logo.html and place an html [img] reference.\n\u0026lt;img src=\u0026quot;/logo.png\u0026quot; height=\u0026quot;100\u0026quot; width=\u0026quot;200\u0026quot;\u0026gt;  Adding new content Jupyter "
+	"content": " Links These are the links I used when creating this site. Below I\u0026rsquo;ve included what I did, hopefully without forgetting anything. Hugo documentation Hugo quick start guide Hugo Learn theme Learn documentation Hugo and Jupyter\nHugo init add theme theme setup color logo serve script for testing publish\u0026hellip;\nSetup I use two repos, one for the source for site generation, and one with the webpage. Source Webpage To set up a github webpage, follow this.\nCreate and clone both repos. Change directory to source repo directory. Initialize Hugo site using hugo new site --force Now add the Learn theme as a submodule using git submodule add https://pages.github.com/ themes/Learn.\nAnd set theme = \u0026quot;Learn\u0026quot; in config.toml.\nI use the following while developing the site hugo server -s ~/git/Site/ -d ~/git/clausholmgaard.github.io/ To start a local server and generate output in the webpage repo.\nGeneral Config Changing default colors Add the following to config.toml. [params] themeVariant = \u0026quot;blue\u0026quot;  Changing Logo Edit themes/Learn/layouts/partials/logo.html and place an html [img] reference.\n\u0026lt;img src=\u0026quot;/logo.png\u0026quot; height=\u0026quot;100\u0026quot; width=\u0026quot;200\u0026quot;\u0026gt;  Adding new content Jupyter Install hugo_jupyter and initialize source directory.\npip install hugo_jupyter hugo_jupyter --init  From the Journal Panic site mentioned before, grab the fab script. Place fabfile.py in the root of your site source directory.\nCreate a notebooks directory in the root of your site source directory.\nNow run Jupyter and create new notebook in the notebooks directory. Edit the metadata, and add a block like the following:\n{ \u0026quot;front-matter\u0026quot;: { \u0026quot;title\u0026quot;: \u0026quot;Test title\u0026quot;, \u0026quot;subtitle\u0026quot;: \u0026quot;Generic subtitle\u0026quot;, \u0026quot;date\u0026quot;: \u0026quot;2017-12-03\u0026quot;, \u0026quot;slug\u0026quot;: \u0026quot;test-title\u0026quot; }, \u0026quot;hugo-jupyter\u0026quot;: { \u0026quot;render-to\u0026quot;: \u0026quot;content/Configuration/\u0026quot; }  fab render_notebooks will render the notebooks as .md files, and if you\u0026rsquo;re running the server, the changes should be picked up. It should also be possible to use fav serve to watch for changes, and render automatically while editing notebooks. I had some problems with this though\u0026hellip;\n"
 },
 {
 	"uri": "http://localhost:1313/categories/",
@@ -12,13 +26,6 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "http://localhost:1313/",
-	"title": "Main",
-	"tags": [],
-	"description": "",
-	"content": " Welcome! \nTodo  Write something other than a todo on the front page Basic site configuration Jupyter support Document setup in configuration section Figure out how to change code block background to something other than black Add content\u0026hellip;  "
 },
 {
 	"uri": "http://localhost:1313/tags/",
