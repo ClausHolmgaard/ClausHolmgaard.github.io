@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Test title</title>
-      <link>http://localhost:1313/configuration/test-title/</link>
+      <title>Test Notebook</title>
+      <link>http://localhost:1313/configuration/test-notebook/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/configuration/test-title/</guid>
+      <guid>http://localhost:1313/configuration/test-notebook/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     

@@ -13,19 +13,19 @@
     <title>Configuration :: My New Hugo Site</title>
     
     
-    <link href="/css/nucleus.css?1512374406" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1512374406" rel="stylesheet">
-    <link href="/css/hybrid.css?1512374406" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1512374406" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1512374406" rel="stylesheet">
-    <link href="/css/auto-complete.css?1512374406" rel="stylesheet">
-    <link href="/css/theme.css?1512374406" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1512374406" rel="stylesheet">
+    <link href="/css/nucleus.css?1512384523" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1512384523" rel="stylesheet">
+    <link href="/css/hybrid.css?1512384523" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1512384523" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1512384523" rel="stylesheet">
+    <link href="/css/auto-complete.css?1512384523" rel="stylesheet">
+    <link href="/css/theme.css?1512384523" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1512384523" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1512374406" rel="stylesheet">
+      <link href="/css/theme-blue.css?1512384523" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1512374406"></script>
+    <script src="/js/jquery-2.x.min.js?1512384523"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1512374406"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1512374406"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1512384523"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1512384523"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1512374406"></script>
+<script type="text/javascript" src="/js/search.js?1512384523"></script>
 
     
   </div>
@@ -100,9 +100,9 @@
  
   
     
-      <li data-nav-id="/configuration/test-title/" title="Test title" class="dd-item ">
-        <a href="/configuration/test-title/">
-        Test title
+      <li data-nav-id="/configuration/test-notebook/" title="Test Notebook" class="dd-item ">
+        <a href="/configuration/test-notebook/">
+        Test Notebook
         
         </a>
     </li>
@@ -278,6 +278,11 @@ hugo_jupyter --init
 
 <p>From the <a href="http://journalpanic.com/post/blogging-with-hugo-and-jupyter-notebooks/">Journal Panic</a> site mentioned before, grab the <a href="https://github.com/knowsuchagency/knowsuchagency.github.io/blob/src/fabfile.py">fab</a> script. Place fabfile.py in the root of your site source directory.</p>
 
+<blockquote>
+<p>Note:
+I had some problems with the location of images generated from notebooks, and made some changes to the fabfile. These changes can be found in the fabfile in my source dir.</p>
+</blockquote>
+
 <p>Create a notebooks directory in the root of your site source directory.</p>
 
 <p>Now run Jupyter and create new notebook in the notebooks directory. <br>
@@ -285,10 +290,9 @@ Edit the metadata, and add a block like the following:</p>
 
 <pre><code>{
   &quot;front-matter&quot;: {
-    &quot;title&quot;: &quot;Test title&quot;,
-    &quot;subtitle&quot;: &quot;Generic subtitle&quot;,
+    &quot;title&quot;: &quot;Test Notebook&quot;,
     &quot;date&quot;: &quot;2017-12-03&quot;,
-    &quot;slug&quot;: &quot;test-title&quot;
+    &quot;slug&quot;: &quot;test-notebook&quot;
   },
   &quot;hugo-jupyter&quot;: {
     &quot;render-to&quot;: &quot;content/Configuration/&quot;
@@ -374,7 +378,7 @@ Edit the metadata, and add a block like the following:</p>
             <a class="nav nav-prev" href="/" title="Main"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/configuration/test-title/" title="Test title" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/configuration/test-notebook/" title="Test Notebook" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -383,20 +387,20 @@ Edit the metadata, and add a block like the following:</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1512374406"></script>
-    <script src="/js/perfect-scrollbar.min.js?1512374406"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1512374406"></script>
-    <script src="/js/jquery.sticky.js?1512374406"></script>
-    <script src="/js/featherlight.min.js?1512374406"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1512374406"></script>
-    <script src="/js/highlight.pack.js?1512374406"></script>
+    <script src="/js/clipboard.min.js?1512384523"></script>
+    <script src="/js/perfect-scrollbar.min.js?1512384523"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1512384523"></script>
+    <script src="/js/jquery.sticky.js?1512384523"></script>
+    <script src="/js/featherlight.min.js?1512384523"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1512384523"></script>
+    <script src="/js/highlight.pack.js?1512384523"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1512374406"></script>
-    <script src="/js/learn.js?1512374406"></script>
-    <script src="/js/hugo-learn.js?1512374406"></script>
+    <script src="/js/modernizr.custom.71422.js?1512384523"></script>
+    <script src="/js/learn.js?1512384523"></script>
+    <script src="/js/hugo-learn.js?1512384523"></script>
 
-    <link href="/mermaid/mermaid.css?1512374406" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1512374406"></script>
+    <link href="/mermaid/mermaid.css?1512384523" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1512384523"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
